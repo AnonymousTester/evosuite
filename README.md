@@ -7,11 +7,13 @@ This repository contains a re-implementation of LIPS (Linearly Independent Path 
 
 To generate a test suite with LIPS use the following command:
 
-```java -jar evosuite.jar -generateMOSuite -Dcriterion=BRANCH -Dalgorithm=LIPS -Doutput_variables=TARGET_CLASS,criterion,algorithm,Total_Goals,Covered_Goals,Generations,Time2MaxCoverage,BranchCoverage -projectCP <classpath> -class <target class>```
+```java -jar evosuite.jar -generateMOSuite -Dcriterion=BRANCH -Dalgorithm=LIPS 
+-Doutput_variables=TARGET_CLASS,criterion,algorithm,Total_Goals,Covered_Goals,Generations,Time2MaxCoverage,BranchCoverage 
+-projectCP <classpath> -class <target class>```
 
 where:
-1. <classpath> is the classpath for the target jar, using standard Java classpath syntax
-2. <target class> is the Java class under test
+1. ```<classpath>``` is the classpath for the target jar, using standard Java classpath syntax
+2. ```<target class>``` is the Java class under test
 3. the other parameters (e.g., population size and search budget) can be set using the traditional syntax in EvoSuite (see http://www.evosuite.org/documentation/ for further details)
 
 
@@ -19,7 +21,9 @@ where:
 
 To generate a test suite with MOSA use the following command:
 
-```java -jar evosuite.jar -generateMOSuite -Dcriterion=BRANCH -Dalgorithm=MOSA -Doutput_variables=TARGET_CLASS,criterion,algorithm,Total_Goals,Covered_Goals,Generations,Time2MaxCoverage,BranchCoverage -projectCP <classpath> -class <target class>```
+```java -jar evosuite.jar -generateMOSuite -Dcriterion=BRANCH -Dalgorithm=MOSA 
+-Doutput_variables=TARGET_CLASS,criterion,algorithm,Total_Goals,Covered_Goals,Generations,Time2MaxCoverage,BranchCoverage 
+-projectCP <classpath> -class <target class>```
 
 
 # Building EvoSuite
@@ -41,4 +45,4 @@ To build EvoSuite in Eclipse, make sure you have the [M2Eclipse](http://www.ecli
 
 The folder ```replication_package``` contains:
 1. The list of Java static methods that can be used to compare LIPS and MOSA (file "subjects.txt")
-2. The JAR files for the methods under test
+2. The JAR files containing the methods under test
