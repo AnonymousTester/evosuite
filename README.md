@@ -7,9 +7,7 @@ This repository contains a re-implementation of LIPS (Linearly Independent Path 
 
 To generate a test suite with LIPS use the following command:
 
-```java -jar evosuite.jar -generateMOSuite -Dcriterion=BRANCH -Dalgorithm=LIPS 
--Doutput_variables=TARGET_CLASS,criterion,algorithm,Total_Goals,Covered_Goals,Generations,Time2MaxCoverage,BranchCoverage 
--projectCP <classpath> -class <target class>```
+```java -jar evosuite.jar -generateMOSuite -Dcriterion=BRANCH -Dalgorithm=LIPS -Doutput_variables=TARGET_CLASS,criterion,algorithm,Total_Goals,Covered_Goals,Generations,Time2MaxCoverage,BranchCoverage -projectCP <classpath> -class <target class>```
 
 where:
 1. ```<classpath>``` is the classpath for the target jar, using standard Java classpath syntax
@@ -21,9 +19,7 @@ where:
 
 To generate a test suite with MOSA use the following command:
 
-```java -jar evosuite.jar -generateMOSuite -Dcriterion=BRANCH -Dalgorithm=MOSA 
--Doutput_variables=TARGET_CLASS,criterion,algorithm,Total_Goals,Covered_Goals,Generations,Time2MaxCoverage,BranchCoverage 
--projectCP <classpath> -class <target class>```
+```java -jar evosuite.jar -generateMOSuite -Dcriterion=BRANCH -Dalgorithm=MOSA -Doutput_variables=TARGET_CLASS,criterion,algorithm,Total_Goals,Covered_Goals,Generations,Time2MaxCoverage,BranchCoverage -projectCP <classpath> -class <target class>```
 
 
 # Building EvoSuite
